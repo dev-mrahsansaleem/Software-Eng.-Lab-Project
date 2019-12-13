@@ -1,0 +1,120 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+namespace FinalYearGroupManager
+{
+    public partial class DataEntryPage : System.Web.UI.Page
+    {
+        SqlConnection con = new SqlConnection("Data Source=DESKTOP-79L809E;Initial Catalog=SeProject;Integrated Security=True");
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            try
+            {
+
+                if (con.State == ConnectionState.Open)
+                    con.Close();
+
+                con.Open();
+                string com = "Select * FROM [user]";
+                SqlCommand cmdd = new SqlCommand(com, con);
+                SqlDataReader dr = cmdd.ExecuteReader();
+                GridView1.DataSource = dr;
+                GridView1.DataBind();
+            }
+            catch
+            {
+                lblStatus.Text = "unable to read and view data";
+            }
+
+
+
+            if (con.State == ConnectionState.Open)
+                con.Close();
+            try
+            {
+                con.Open();
+                string com = "Select * FROM userType";
+                SqlDataAdapter adpt = new SqlDataAdapter(com, con);
+                DataTable dt = new DataTable();
+                adpt.Fill(dt);
+                DropDownList1.DataSource = dt;
+                DropDownList1.DataBind();
+                DropDownList1.DataTextField = "type";
+                DropDownList1.DataValueField = "id";
+                DropDownList1.DataBind();
+                /*
+                //data grid view
+                SqlCommand cmdd = new SqlCommand(com, con);
+                SqlDataReader dr = cmdd.ExecuteReader();
+                GridView1.DataSource = dr;
+                GridView1.DataBind();*/
+            }
+            catch
+            {
+                lblStatus.Text = "unable to load data in dropdown";
+            }
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            if (con.State == ConnectionState.Open)
+                con.Close();
+            try
+            {
+                
+                con.Open();
+                SqlCommand cmd = new SqlCommand("insert into [user] ([name],[typeId],[roll no],[Section]) values('"+tbName.Text+"','"+ DropDownList1.SelectedValue+"','"+tbrollno.Text+"','"+tbSection.Text+"')", con);
+                //SqlCommand cmd = new SqlCommand("Insert INTO [QuizDB].[dbo].[inputDataTable] ([name]) VALUES ('"+name+"')", con);
+                cmd.ExecuteNonQuery();
+                con.Close();
+                if (con.State == ConnectionState.Open)
+                    con.Close();
+                try
+                {
+                    con.Open();
+                    string com = "Select * FROM [user]";
+                    SqlCommand cmdd = new SqlCommand(com, con);
+                    SqlDataReader dr = cmdd.ExecuteReader();
+                    GridView1.DataSource = dr;
+                    GridView1.DataBind();
+                }
+                catch
+                {
+                    lblStatus.Text = "unable to read and view data";
+                }
+
+                
+            }
+            catch
+            {
+                lblStatus.Text = "unable to insert user";
+            }
+            
+            /*
+            con.Open();
+            string com = "Select * FROM userType";
+            SqlDataAdapter adpt = new SqlDataAdapter(com, con);
+            DataTable dt = new DataTable();
+            adpt.Fill(dt);
+            DropDownList1.DataSource = dt;
+            DropDownList1.DataBind();
+            DropDownList1.DataTextField = "type";
+            DropDownList1.DataValueField = "id";
+            DropDownList1.DataBind();
+            //data grid view
+            con.Open();
+            string com = "Select * FROM userType";
+            SqlCommand cmdd = new SqlCommand(com, con);
+            SqlDataReader dr = cmdd.ExecuteReader();
+            GridView1.DataSource = dr;
+            GridView1.DataBind();
+            */
+        }
+    }
+}
