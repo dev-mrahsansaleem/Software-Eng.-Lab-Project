@@ -18,3 +18,23 @@ D:\git hub\Final year group manager\FinalYearGroupManager\FinalYearGroupManager\
 D:\git hub\Final year group manager\FinalYearGroupManager\FinalYearGroupManager\obj\Debug\FinalYearGroupManager.csprojResolveAssemblyReference.cache
 D:\git hub\Final year group manager\FinalYearGroupManager\FinalYearGroupManager\obj\Debug\FinalYearGroupManager.dll
 D:\git hub\Final year group manager\FinalYearGroupManager\FinalYearGroupManager\obj\Debug\FinalYearGroupManager.pdb
+D:\git hub\Software-Eng.-Lab-Project\FinalYearGroupManager\bin\roslyn\csc.exe
+D:\git hub\Software-Eng.-Lab-Project\FinalYearGroupManager\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\git hub\Software-Eng.-Lab-Project\FinalYearGroupManager\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\git hub\Software-Eng.-Lab-Project\FinalYearGroupManager\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\git hub\Software-Eng.-Lab-Project\FinalYearGroupManager\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\git hub\Software-Eng.-Lab-Project\FinalYearGroupManager\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\git hub\Software-Eng.-Lab-Project\FinalYearGroupManager\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\git hub\Software-Eng.-Lab-Project\FinalYearGroupManager\bin\roslyn\System.Collections.Immutable.dll
+D:\git hub\Software-Eng.-Lab-Project\FinalYearGroupManager\bin\roslyn\System.Reflection.Metadata.dll
+D:\git hub\Software-Eng.-Lab-Project\FinalYearGroupManager\bin\roslyn\vbc.exe
+D:\git hub\Software-Eng.-Lab-Project\FinalYearGroupManager\bin\roslyn\VBCSCompiler.exe
+D:\git hub\Software-Eng.-Lab-Project\FinalYearGroupManager\bin\roslyn\VBCSCompiler.exe.config
+D:\git hub\Software-Eng.-Lab-Project\FinalYearGroupManager\bin\FinalYearGroupManager.dll.config
+D:\git hub\Software-Eng.-Lab-Project\FinalYearGroupManager\bin\FinalYearGroupManager.dll
+D:\git hub\Software-Eng.-Lab-Project\FinalYearGroupManager\bin\FinalYearGroupManager.pdb
+D:\git hub\Software-Eng.-Lab-Project\FinalYearGroupManager\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\git hub\Software-Eng.-Lab-Project\FinalYearGroupManager\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\git hub\Software-Eng.-Lab-Project\FinalYearGroupManager\obj\Debug\FinalYearGroupManager.csprojResolveAssemblyReference.cache
+D:\git hub\Software-Eng.-Lab-Project\FinalYearGroupManager\obj\Debug\FinalYearGroupManager.dll
+D:\git hub\Software-Eng.-Lab-Project\FinalYearGroupManager\obj\Debug\FinalYearGroupManager.pdb

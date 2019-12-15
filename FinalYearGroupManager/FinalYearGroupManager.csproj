@@ -66,6 +66,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Group Info.aspx" />
     <Content Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -76,6 +77,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="DataEntryPage.aspx" />
+    <Content Include="Projects.aspx" />
     <Content Include="TypePage.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -86,6 +88,20 @@
     </Compile>
     <Compile Include="DataEntryPage.aspx.designer.cs">
       <DependentUpon>DataEntryPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Group Info.aspx.cs">
+      <DependentUpon>Group Info.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Group Info.aspx.designer.cs">
+      <DependentUpon>Group Info.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Projects.aspx.cs">
+      <DependentUpon>Projects.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Projects.aspx.designer.cs">
+      <DependentUpon>Projects.aspx</DependentUpon>
     </Compile>
     <Compile Include="TypePage.aspx.cs">
       <DependentUpon>TypePage.aspx</DependentUpon>

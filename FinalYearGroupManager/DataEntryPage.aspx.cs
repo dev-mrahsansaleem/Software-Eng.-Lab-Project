@@ -116,5 +116,25 @@ namespace FinalYearGroupManager
             GridView1.DataBind();
             */
         }
+
+        protected void GridView1_RowCommand(object sender, GridViewCommandEventArgs e)//onclick event
+        {
+
+
+            /*
+            lblStatus.Text = "wqeqwe";
+            lblStatus.ForeColor = System.Drawing.Color.Red;
+            */
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Server.Transfer("Group Info.aspx");
+        }
+
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+            Server.Transfer("Projects.aspx");
+        }
     }
 }
