@@ -66,8 +66,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AssignGroupAndProject.aspx" />
     <Content Include="Evaluation page.aspx" />
     <Content Include="Group Info.aspx" />
+    <Content Include="Groups.aspx" />
     <Content Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -83,6 +85,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AssignGroupAndProject.aspx.cs">
+      <DependentUpon>AssignGroupAndProject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssignGroupAndProject.aspx.designer.cs">
+      <DependentUpon>AssignGroupAndProject.aspx</DependentUpon>
+    </Compile>
     <Compile Include="DataEntryPage.aspx.cs">
       <DependentUpon>DataEntryPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -103,6 +112,13 @@
     </Compile>
     <Compile Include="Group Info.aspx.designer.cs">
       <DependentUpon>Group Info.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Groups.aspx.cs">
+      <DependentUpon>Groups.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Groups.aspx.designer.cs">
+      <DependentUpon>Groups.aspx</DependentUpon>
     </Compile>
     <Compile Include="Projects.aspx.cs">
       <DependentUpon>Projects.aspx</DependentUpon>

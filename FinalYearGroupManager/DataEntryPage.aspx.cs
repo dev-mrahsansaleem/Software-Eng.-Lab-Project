@@ -67,9 +67,9 @@ namespace FinalYearGroupManager
                 con.Close();
             try
             {
-                
+                string com = "insert into [user] ([name],[roll no],[Section],[typeId],[GroupId],[projectId]) values('" + tbName.Text + "','" + tbrollno.Text + "','" + tbSection.Text + "','" + DropDownList1.SelectedValue + "','-1','-1')";
                 con.Open();
-                SqlCommand cmd = new SqlCommand("insert into [user] ([name],[typeId],[roll no],[Section]) values('"+tbName.Text+"','"+ DropDownList1.SelectedValue+"','"+tbrollno.Text+"','"+tbSection.Text+"')", con);
+                SqlCommand cmd = new SqlCommand(com, con);
                 //SqlCommand cmd = new SqlCommand("Insert INTO [QuizDB].[dbo].[inputDataTable] ([name]) VALUES ('"+name+"')", con);
                 cmd.ExecuteNonQuery();
                 con.Close();
@@ -78,7 +78,7 @@ namespace FinalYearGroupManager
                 try
                 {
                     con.Open();
-                    string com = "Select * FROM [user]";
+                    com = "Select * FROM [user]";
                     SqlCommand cmdd = new SqlCommand(com, con);
                     SqlDataReader dr = cmdd.ExecuteReader();
                     GridView1.DataSource = dr;
@@ -139,7 +139,7 @@ namespace FinalYearGroupManager
         protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
         {
             // transfer data form current to next page
-            Response.Redirect("Group Info.aspx?studName=" + GridView1.SelectedRow.Cells[2].Text + "&rollNo=" + GridView1.SelectedRow.Cells[3].Text);
+            Response.Redirect("Group Info.aspx?studName=" + GridView1.SelectedRow.Cells[2].Text + "&rollNo=" + GridView1.SelectedRow.Cells[3].Text + "&groupid=" + GridView1.SelectedRow.Cells[6].Text + "&productid=" + GridView1.SelectedRow.Cells[7].Text);
         }
     }
 }

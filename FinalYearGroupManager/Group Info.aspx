@@ -10,6 +10,9 @@
     <form id="form1" runat="server">
     <div>
     
+        <asp:Label ID="lblStatus" runat="server"></asp:Label>
+        <br />
+    
         <asp:Label ID="Label7" runat="server" Font-Bold="True" Font-Size="Larger" Text="Student Details"></asp:Label>
         <br />
         Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -41,6 +44,7 @@
         <br />
         student name:&nbsp;&nbsp;&nbsp;
         <asp:DropDownList ID="DropDownList1" runat="server" Height="16px" Width="105px">
+            <asp:ListItem>None</asp:ListItem>
         </asp:DropDownList>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Status:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:Label ID="Label1" runat="server" Text="Asign/not asign"></asp:Label>
@@ -63,6 +67,16 @@
         <asp:Label ID="Label5" runat="server" Text="Project Description"></asp:Label>
         <br />
         <br />
+        if not assign to goup thren show bellow<br />
+        list of projects:&nbsp;&nbsp;&nbsp;
+        <asp:DropDownList ID="DropDownList2" runat="server" Height="16px" Width="105px">
+        </asp:DropDownList>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Status:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Label ID="Label12" runat="server" Text="Asign/not asign"></asp:Label>
+        <br />
+        <asp:Button ID="Button2" runat="server" Text="Assign this project to whole group" Width="247px" OnClick="Button1_Click" />
+        <br />
+        //^^^^^^^^^^^^^^^^<br />
         <br />
         <asp:Label ID="Label8" runat="server" Font-Bold="True" Font-Size="Larger" Text="Evaluations Details"></asp:Label>
         <br />

@@ -35,6 +35,5 @@ D:\git hub\Software-Eng.-Lab-Project\FinalYearGroupManager\bin\FinalYearGroupMan
 D:\git hub\Software-Eng.-Lab-Project\FinalYearGroupManager\bin\FinalYearGroupManager.pdb
 D:\git hub\Software-Eng.-Lab-Project\FinalYearGroupManager\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 D:\git hub\Software-Eng.-Lab-Project\FinalYearGroupManager\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\git hub\Software-Eng.-Lab-Project\FinalYearGroupManager\obj\Debug\FinalYearGroupManager.csprojResolveAssemblyReference.cache
 D:\git hub\Software-Eng.-Lab-Project\FinalYearGroupManager\obj\Debug\FinalYearGroupManager.dll
 D:\git hub\Software-Eng.-Lab-Project\FinalYearGroupManager\obj\Debug\FinalYearGroupManager.pdb
