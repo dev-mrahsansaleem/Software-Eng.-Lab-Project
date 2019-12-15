@@ -12,6 +12,7 @@
     
         <asp:Label ID="Label7" runat="server" Font-Bold="True" Font-Size="Larger" Text="Group Details"></asp:Label>
         <br />
+        <br />
         Group ID:&nbsp;&nbsp;&nbsp;&nbsp; <asp:Label ID="Label2" runat="server" Text="Group Id"></asp:Label>
         <br />
         Group members:</div>
@@ -40,6 +41,7 @@
         <br />
         <asp:Label ID="Label6" runat="server" Font-Bold="True" Font-Size="Larger" Text="Project Details"></asp:Label>
         <br />
+        <br />
         Project Details<br />
         Project ID:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:Label ID="Label3" runat="server" Text="Project Id"></asp:Label>
         <br />
@@ -48,6 +50,7 @@
         <br />
         Project Description:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:Label ID="Label5" runat="server" Text="Project Description"></asp:Label>
+        <br />
         <br />
         <br />
         <asp:Label ID="Label8" runat="server" Font-Bold="True" Font-Size="Larger" Text="Evaluations Details"></asp:Label>
