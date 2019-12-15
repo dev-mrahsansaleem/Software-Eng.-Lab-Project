@@ -119,8 +119,7 @@ namespace FinalYearGroupManager
 
         protected void GridView1_RowCommand(object sender, GridViewCommandEventArgs e)//onclick event
         {
-
-
+            //Server.Transfer("Group Info.aspx");
             /*
             lblStatus.Text = "wqeqwe";
             lblStatus.ForeColor = System.Drawing.Color.Red;
@@ -135,6 +134,12 @@ namespace FinalYearGroupManager
         protected void Button3_Click(object sender, EventArgs e)
         {
             Server.Transfer("Projects.aspx");
+        }
+
+        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // transfer data form current to next page
+            Response.Redirect("Group Info.aspx?studName=" + GridView1.SelectedRow.Cells[2].Text + "&rollNo=" + GridView1.SelectedRow.Cells[3].Text);
         }
     }
 }

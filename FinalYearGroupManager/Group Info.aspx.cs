@@ -11,6 +11,14 @@ namespace FinalYearGroupManager
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            //get data from pre form and show it on labl
+            Label10.Text = Request.QueryString["studName"].ToString();
+            Label11.Text = Request.QueryString["rollNo"].ToString();
+
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
 
         }
     }

@@ -66,6 +66,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Evaluation page.aspx" />
     <Content Include="Group Info.aspx" />
     <Content Include="packages.config" />
     <None Include="Web.Debug.config">
@@ -88,6 +89,13 @@
     </Compile>
     <Compile Include="DataEntryPage.aspx.designer.cs">
       <DependentUpon>DataEntryPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Evaluation page.aspx.cs">
+      <DependentUpon>Evaluation page.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Evaluation page.aspx.designer.cs">
+      <DependentUpon>Evaluation page.aspx</DependentUpon>
     </Compile>
     <Compile Include="Group Info.aspx.cs">
       <DependentUpon>Group Info.aspx</DependentUpon>

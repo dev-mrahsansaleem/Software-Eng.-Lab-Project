@@ -10,7 +10,18 @@
     <form id="form1" runat="server">
     <div>
     
-        <asp:Label ID="Label7" runat="server" Font-Bold="True" Font-Size="Larger" Text="Group Details"></asp:Label>
+        <asp:Label ID="Label7" runat="server" Font-Bold="True" Font-Size="Larger" Text="Student Details"></asp:Label>
+        <br />
+        Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Label ID="Label10" runat="server" Text="Label"></asp:Label>
+        <br />
+        Roll No:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Label ID="Label11" runat="server" Text="Label"></asp:Label>
+        <br />
+        <br />
+        <br />
+    
+        <asp:Label ID="Label9" runat="server" Font-Bold="True" Font-Size="Larger" Text="Group Details"></asp:Label>
         <br />
         <br />
         Group ID:&nbsp;&nbsp;&nbsp;&nbsp; <asp:Label ID="Label2" runat="server" Text="Group Id"></asp:Label>
@@ -35,7 +46,7 @@
         <asp:Label ID="Label1" runat="server" Text="Asign/not asign"></asp:Label>
         <br />
         <br />
-        <asp:Button ID="Button1" runat="server" Text="Add Group Member" Width="199px" />
+        <asp:Button ID="Button1" runat="server" Text="Add Group Member" Width="199px" OnClick="Button1_Click" />
         <br />
         <br />
         <br />
